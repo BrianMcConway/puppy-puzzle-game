@@ -2,6 +2,7 @@
 
 body {
     background-color: #3498e9;
+    background-position: center;
 }
 
 .heading {
@@ -49,6 +50,7 @@ footer {
     padding-top: 1%;
     padding-bottom: 1%;
     position: fixed;
+    
     right: 0;
     bottom: 0;
     width: 100%;
