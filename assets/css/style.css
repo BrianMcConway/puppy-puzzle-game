@@ -41,7 +41,12 @@ body {
 
 }
 
-
+.sound-new {
+    display: flex;
+    flex-direction: row;
+    justify-content: centre;
+    align-items: center;
+}
 
 footer {
     font-family: sans-serif;
@@ -76,3 +81,8 @@ footer {
 }
 
 
+@media only screen and (max-width: 768px) {
+    .heading {
+        font-size: 50px; /* Adjust the font size for smaller screens */
+    }
+}
