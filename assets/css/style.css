@@ -30,6 +30,14 @@ body {
     flex-wrap: wrap;
 }
 
+.sound-new {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+}
+
 .new-game {
     cursor: pointer;
     display: block;
@@ -41,25 +49,30 @@ body {
 
 }
 
-.sound-new {
-    display: flex;
-    flex-direction: row;
-    justify-content: centre;
-    align-items: center;
+.audio-button {
+    width: 50%;
+    max-width: 200px;
+    margin: 20px auto;
+    display: block;
+}
+
+.navbar {
+    display: block;
+    font-family: sans-serif;
+    text-align: center;
 }
 
 footer {
     font-family: sans-serif;
     text-align: center;
-    color: #d9d9d9;
+    color: #db4040;
     padding-top: 1%;
     padding-bottom: 1%;
     position: fixed;
-    
     right: 0;
     bottom: 0;
     width: 100%;
-    background-color: #1c09e7;
+    background-color: #d5e40d;
 }
 
 /*Social media icons size & positioning on footer*/
@@ -71,7 +84,7 @@ footer {
 
 /*Social media links icons color & hover transition time*/
 .fa-brands {
-    color: #d9d9d9;
+    color: #e65858;
     transition: all 0.4s linear;
 }
 
