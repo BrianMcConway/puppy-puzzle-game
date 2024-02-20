@@ -10,3 +10,12 @@ body {
     font-size: 100px;
     margin: 0;
 }
+
+.puzzle-board {
+    width: 90%;
+    max-width: 360px;
+    aspect-ratio: 1;
+    background-color: #808080;
+    border: 10px solid #ffffff;
+    margin: 0 auto;
+}
