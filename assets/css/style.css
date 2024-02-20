@@ -11,12 +11,66 @@ body {
     margin: 0;
 }
 
+.stats {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
 .puzzle-board {
     width: 90%;
-    max-width: 360px;
+    max-width: 450px;
     aspect-ratio: 1;
     background-color: #808080;
     border: 10px solid #ffffff;
     margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
 }
+
+.new-game {
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    margin-top: 5px;
+    border: 3px solid #000;
+    border-radius: 10px;
+    padding: 10px;
+
+}
+
+
+
+footer {
+    font-family: sans-serif;
+    text-align: center;
+    color: #d9d9d9;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #1c09e7;
+}
+
+/*Social media icons size & positioning on footer*/
+.social-icons {
+    display: flex;
+    justify-content: space-around;
+    font-size: 150%;
+}
+
+/*Social media links icons color & hover transition time*/
+.fa-brands {
+    color: #d9d9d9;
+    transition: all 0.4s linear;
+}
+
+/*Social media links hover color change*/
+.fa-brands:hover {
+    color: #9999b8;
+}
+
 
