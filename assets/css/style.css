@@ -22,12 +22,21 @@ body {
 .puzzle-board {
     width: 90%;
     max-width: 450px;
+    height: 90%;
+    max-height: 450px;
     aspect-ratio: 1;
     background-color: #808080;
     border: 10px solid #ffffff;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
+}
+
+img {
+    max-width: 146px;
+    max-height: 146px;
+    border: 1px solid #ffffff;
+    margin: auto; 
 }
 
 .sound-new {
@@ -65,14 +74,14 @@ body {
 footer {
     font-family: sans-serif;
     text-align: center;
-    color: #db4040;
+    color: #da3a8a;
     padding-top: 1%;
     padding-bottom: 1%;
     position: fixed;
     right: 0;
     bottom: 0;
     width: 100%;
-    background-color: #d5e40d;
+    background-color: #e7eb09;
 }
 
 /*Social media icons size & positioning on footer*/
