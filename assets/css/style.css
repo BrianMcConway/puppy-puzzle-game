@@ -47,6 +47,7 @@ img {
 }
 
 .new-game {
+    font-family: Arial, Helvetica, sans-serif;
     cursor: pointer;
     margin-right: 40%;
     border: 3px solid #000;
@@ -55,6 +56,8 @@ img {
 }
 
 .how-to-play {
+    
+    color: #000000;
     cursor: pointer;
     margin-left: 40%;
     border: 3px solid #000;
@@ -63,7 +66,9 @@ img {
 }
 
 .how-to-play a {
+    font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
+    color: #000000;
 }
 
 .audio-button {
