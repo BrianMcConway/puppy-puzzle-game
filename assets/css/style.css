@@ -39,48 +39,52 @@ img {
     box-sizing: border-box;
 }
 
-.sound-new {
+.how-new {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-evenly;
     padding-top: 10px;
 }
 
 .new-game {
     cursor: pointer;
-    display: block;
-    margin: auto;
-    margin-top: 5px;
+    margin-right: 40%;
     border: 3px solid #000;
     border-radius: 10px;
     padding: 10px;
 }
 
-.audio-button {
-    width: 50%;
-    max-width: 200px;
-    margin: 20px auto;
-    display: block;
+.how-to-play {
+    cursor: pointer;
+    margin-left: 40%;
+    border: 3px solid #000;
+    border-radius: 10px;
+    padding: 10px;  
 }
 
-.navbar {
+.how-to-play a {
+    text-decoration: none;
+}
+
+.audio-button {
+    width: 50%;
+    max-width: 250px;
     display: block;
-    font-family: sans-serif;
-    text-align: center;
+    margin: auto;
+    padding-top: 10px;
 }
 
 footer {
     font-family: sans-serif;
     text-align: center;
-    color: #da3a8a;
+    color: #000000;
     padding-top: 1%;
     padding-bottom: 1%;
     position: fixed;
     right: 0;
     bottom: 0;
     width: 100%;
-    background-color: #e7eb09;
+    background: linear-gradient(to bottom, #e7eb09, #da3a8a);
 }
 
 /*Social media icons size & positioning on footer*/
@@ -92,17 +96,27 @@ footer {
 
 /*Social media links icons color & hover transition time*/
 .fa-brands {
-    color: #e65858;
+    color: #000000;
     transition: all 0.4s linear;
 }
 
 /*Social media links hover color change*/
 .fa-brands:hover {
-    color: #9999b8;
+    color: #3498e9;
 }
 
 @media only screen and (max-width: 768px) {
     .heading {
         font-size: 50px;
+    }
+
+    .how-new {
+        flex-wrap: wrap;
+    }
+
+    .new-game,
+    .how-to-play {
+        margin: 10px; 
+        width: calc(50% - 20px);
     }
 }
