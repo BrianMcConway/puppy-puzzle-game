@@ -1,17 +1,34 @@
 var rows = 3;
 var columns = 3;
 var emptyTile = { row: 2, col: 2 }; // Position of the empty tile
-// Starting order of puzzle tiles
 var imgOrder = ["assets/images/2.png", "assets/images/5.png", "assets/images/3.png", "assets/images/7.png", "assets/images/6.png", "assets/images/8.png", "assets/images/9.png", "assets/images/1.png", "assets/images/4.png"];
-// Event handler that executes funftion when HTMl is loaded
+
+// Event handler that executes function when HTML is loaded
 window.onload = function () {
-    initializeGame();
+    setupPuzzleBoard(); // Initial puzzle setup
+    document.getElementById("new-game").addEventListener("click", startNewGame); // Event listner for new-game
 }
 
-function initializeGame() {
+// Function to start a new game
+function startNewGame() {
+    shuffleImages(); // Shuffle the images randomly
+    setupPuzzleBoard(); // Reset puzzle board
+}
+
+// Function to shuffle the images randomly
+function shuffleImages() {
+    for (let i = imgOrder.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [imgOrder[i], imgOrder[j]] = [imgOrder[j], imgOrder[i]];
+    }
+}
+
+// Function to initialize the puzzle board
+function setupPuzzleBoard() {
     // Clear the existing content of the puzzle-board
     document.getElementById("puzzle-board").innerHTML = "";
-    // initializes the process of creating the puzzle-board  
+
+    // Initializes process of creating the puzzle-board
     for (let r = 0; r < rows; r++) {
         for (let c = 0; c < columns; c++) {
             let tile = document.createElement("img");
@@ -21,6 +38,7 @@ function initializeGame() {
             tile.addEventListener("click", function () {
                 moveTile(r, c);
             });
+
             // The loaded image is appended to the puzzle-board and builds in the required order
             document.getElementById("puzzle-board").append(tile);
 
@@ -31,6 +49,7 @@ function initializeGame() {
         }
     }
 }
+
 // Swapping selected tile with emptyTile
 function moveTile(row, col) {
     if (isAdjacent(row, col, emptyTile.row, emptyTile.col)) {
