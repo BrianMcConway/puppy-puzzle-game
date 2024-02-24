@@ -3,6 +3,8 @@ var columns = 3;
 var emptyTile = { row: 2, col: 2 }; // Position of the empty tile
 var imgOrder = ["assets/images/2.png", "assets/images/5.png", "assets/images/3.png", "assets/images/7.png", "assets/images/6.png", "assets/images/8.png", "assets/images/9.png", "assets/images/1.png", "assets/images/4.png"];
 
+var movesCount = 0; // Variable for counting moves
+
 // Event handler that executes function when HTML is loaded
 window.onload = function () {
     setupPuzzleBoard(); // Initial puzzle setup
@@ -11,10 +13,12 @@ window.onload = function () {
 
 // Function to start a new game
 function startNewGame() {
-    // Display a confirmation dialog for start a new game pop-up (Add a pop-up window)
+    // Display a confirmation dialog for starting a new game (Add a pop-up window)
     var confirmNewGame = confirm("Are you sure you want to start a new game?");
 
     if (confirmNewGame) {
+        movesCount = 0; // Reset moves count
+        updateTurnsCount(); // Update turns count display
         shuffleImages(); // Shuffle the images randomly
         setupPuzzleBoard(); // Reset puzzle board
     }
@@ -60,17 +64,26 @@ function moveTile(row, col) {
     if (isAdjacent(row, col, emptyTile.row, emptyTile.col)) {
         swapTiles(row, col, emptyTile.row, emptyTile.col);
         emptyTile = { row: row, col: col };
+        movesCount++; // Increment moves count
+        updateTurnsCount(); // Update turns count display
 
         // Check if the puzzle is in the correct order and display Congratulations message (Add a pop-up window)
         if (isPuzzleSolved()) {
-            alert("Congratulations! You got there in the end!");
+            alert("Congratulations! You got there in the end in " + movesCount + " moves!");
         }
     }
 }
+
+// Function to update the turns count display
+function updateTurnsCount() {
+    document.getElementById("turns").innerText = movesCount;
+}
+
 // Check if first position and second position are adjacent on the grid
 function isAdjacent(row1, col1, row2, col2) {
     return (Math.abs(row1 - row2) === 1 && col1 === col2) || (Math.abs(col1 - col2) === 1 && row1 === row2);
 }
+
 // Swap tile positions on the puzzle-board
 function swapTiles(row1, col1, row2, col2) {
     var tempSrc = imgOrder[row1 * columns + col1];
@@ -80,6 +93,7 @@ function swapTiles(row1, col1, row2, col2) {
     document.getElementById(row1 + "-" + col1).src = imgOrder[row1 * columns + col1];
     document.getElementById(row2 + "-" + col2).src = imgOrder[row2 * columns + col2];
 }
+
 // Determine if puzzle is solved and activate the alert message if true
 function isPuzzleSolved() {
     for (let r = 0; r < rows; r++) {
@@ -90,4 +104,4 @@ function isPuzzleSolved() {
         }
     }
     return true;
-}       
+}
