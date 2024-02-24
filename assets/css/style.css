@@ -110,6 +110,10 @@ footer {
     color: #3498e9;
 }
 
+
+/*Modals*/
+.modal-rules
+
 @media only screen and (max-width: 768px) {
     .heading {
         font-size: 50px;
@@ -125,3 +129,4 @@ footer {
         width: calc(50% - 20px);
     }
 }
+

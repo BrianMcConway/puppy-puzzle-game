@@ -69,7 +69,8 @@ function moveTile(row, col) {
 
         // Check if the puzzle is in the correct order and display Congratulations message (Add a pop-up window)
         if (isPuzzleSolved()) {
-            alert("Congratulations! You got there in the end in " + movesCount + " moves!");
+            document.getElementById("movesCount").innerText = movesCount;
+            showModal();
         }
     }
 }
