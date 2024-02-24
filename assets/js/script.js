@@ -6,11 +6,12 @@ var imgOrder = ["assets/images/2.png", "assets/images/5.png", "assets/images/3.p
 // Event handler that executes function when HTML is loaded
 window.onload = function () {
     setupPuzzleBoard(); // Initial puzzle setup
-    document.getElementById("new-game").addEventListener("click", startNewGame); // Event listner for new-game
+    document.getElementById("new-game").addEventListener("click", startNewGame);
 }
 
 // Function to start a new game
 function startNewGame() {
+    console.log("New Game button clicked");
     shuffleImages(); // Shuffle the images randomly
     setupPuzzleBoard(); // Reset puzzle board
 }
@@ -28,7 +29,7 @@ function setupPuzzleBoard() {
     // Clear the existing content of the puzzle-board
     document.getElementById("puzzle-board").innerHTML = "";
 
-    // Initializes process of creating the puzzle-board
+    // Initializes the process of creating the puzzle-board
     for (let r = 0; r < rows; r++) {
         for (let c = 0; c < columns; c++) {
             let tile = document.createElement("img");
@@ -85,4 +86,4 @@ function isPuzzleSolved() {
         }
     }
     return true;
-}
+}       
