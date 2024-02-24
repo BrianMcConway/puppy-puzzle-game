@@ -11,9 +11,13 @@ window.onload = function () {
 
 // Function to start a new game
 function startNewGame() {
-    console.log("New Game button clicked");
-    shuffleImages(); // Shuffle the images randomly
-    setupPuzzleBoard(); // Reset puzzle board
+    // Display a confirmation dialog for start a new game pop-up (Add a pop-up window)
+    var confirmNewGame = confirm("Are you sure you want to start a new game?");
+
+    if (confirmNewGame) {
+        shuffleImages(); // Shuffle the images randomly
+        setupPuzzleBoard(); // Reset puzzle board
+    }
 }
 
 // Function to shuffle the images randomly
@@ -57,7 +61,7 @@ function moveTile(row, col) {
         swapTiles(row, col, emptyTile.row, emptyTile.col);
         emptyTile = { row: row, col: col };
 
-        // Check if the puzzle is in the correct order and display Congratulations message (Make a pop-up window)
+        // Check if the puzzle is in the correct order and display Congratulations message (Add a pop-up window)
         if (isPuzzleSolved()) {
             alert("Congratulations! You got there in the end!");
         }
@@ -76,7 +80,7 @@ function swapTiles(row1, col1, row2, col2) {
     document.getElementById(row1 + "-" + col1).src = imgOrder[row1 * columns + col1];
     document.getElementById(row2 + "-" + col2).src = imgOrder[row2 * columns + col2];
 }
-// Determine if puzzle is solved and activate the alert message (Make pop-up window)
+// Determine if puzzle is solved and activate the alert message if true
 function isPuzzleSolved() {
     for (let r = 0; r < rows; r++) {
         for (let c = 0; c < columns; c++) {
