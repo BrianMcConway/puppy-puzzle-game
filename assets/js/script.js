@@ -123,7 +123,7 @@ function showModal() {
 
     movesCountSpan.innerText = movesCount;
 
-    modalMessage.innerText = "Congratulations! You got there in the end in " + movesCount + " moves!";
+    modalMessage.innerText = "Congratulations! You got there in " + movesCount + " moves!";
 
     winModal.style.display = "block";
 
