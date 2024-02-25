@@ -18,17 +18,18 @@ body {
 
 .turns {
     display: inline-block;
-    width: 120px; 
+    width: 140px; 
     border: 5px solid;
     border-radius: 10%;
     padding: 10px;
+    padding-right: 10px;
     margin: 0 auto 10px;
     background-color: #ffffff;
 }
 
 .turns span {
     display: inline-block;
-    width: 20px; 
+    width: 40px; 
     text-align: center;
 }
 
