@@ -75,7 +75,7 @@ function moveTile(row, col) {
         updateTurnsCount();
 
         if (isPuzzleSolved()) {
-            document.getElementById("movesCount").innerText = movesCount;
+            document.getElementById("turns").innerText = movesCount;
             showWinModal();
         }
     }
@@ -121,13 +121,14 @@ function closeModal() {
 }
 
 function showWinModal() {
+
     if (puzzleSolved) {
         var winModal = document.getElementById("modal-win");
         var movesCountSpan = document.getElementById("win-movesCount");
 
         movesCountSpan.innerText = movesCount;
 
-        document.getElementById("modal-win-message").innerText = "Congratulations! You got there in the end in " + movesCount + " moves!";
+        document.getElementById("modal-win-message").innerText = "Congratulations! You got there in " + movesCount + " moves!";
 
         winModal.style.display = "block";
 
