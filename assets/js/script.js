@@ -9,6 +9,7 @@ var movesCount = 0; // Variable for counting moves
 window.onload = function () {
     setupPuzzleBoard(); // Initial puzzle setup
     document.getElementById("new-game").addEventListener("click", startNewGame);
+    document.getElementById("how-to-play").addEventListener("click", openModal);
 }
 
 // Function to start a new game
@@ -106,3 +107,16 @@ function isPuzzleSolved() {
     }
     return true;
 }
+
+function openModal() {
+    var modal = document.getElementById("modal-rules");
+    modal.style.display = "block";
+}
+
+function closeModal() {
+    var modal = document.getElementById("modal-rules");
+    modal.style.display = "none";
+}
+
+// Close the modal when the close button is clicked
+document.getElementById("close-button").addEventListener("click", closeModal);
