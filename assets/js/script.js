@@ -4,15 +4,18 @@ var emptyTile = { row: 2, col: 2 };
 var imgOrder = ["assets/images/2.png", "assets/images/5.png", "assets/images/3.png", "assets/images/7.png", "assets/images/6.png", "assets/images/8.png", "assets/images/9.png", "assets/images/1.png", "assets/images/4.png"];
 
 var movesCount = 0;
+var puzzleSolved = false; // Flag to track puzzle state
 
 // Event handler that executes function when HTML is loaded
 window.onload = function () {
+    // Hide the win modal on page load
+    document.getElementById("modal-win").style.display = "none";
+
     setupPuzzleBoard();
     document.getElementById("new-game").addEventListener("click", confirmStartNewGame);
     document.getElementById("how-to-play").addEventListener("click", openModal);
 }
 
-// Function to start a new game
 function confirmStartNewGame() {
     var confirmationModal = document.getElementById("modal-sure");
     confirmationModal.style.display = "block";
@@ -32,6 +35,7 @@ function startNewGame() {
     updateTurnsCount();
     shuffleImages();
     setupPuzzleBoard();
+    puzzleSolved = false; // Reset the puzzleSolved flag
 }
 
 function shuffleImages() {
@@ -72,7 +76,7 @@ function moveTile(row, col) {
 
         if (isPuzzleSolved()) {
             document.getElementById("movesCount").innerText = movesCount;
-            showModal();
+            showWinModal();
         }
     }
 }
@@ -102,6 +106,7 @@ function isPuzzleSolved() {
             }
         }
     }
+    puzzleSolved = true; // Set the flag to true when the puzzle is solved
     return true;
 }
 
@@ -115,26 +120,25 @@ function closeModal() {
     modal.style.display = "none";
 }
 
-// Function to show the win modal
-function showModal() {
-    var winModal = document.getElementById("modal-win");
-    var modalMessage = document.getElementById("modal-win-message");
-    var movesCountSpan = document.getElementById("win-movesCount");
+function showWinModal() {
+    if (puzzleSolved) {
+        var winModal = document.getElementById("modal-win");
+        var movesCountSpan = document.getElementById("win-movesCount");
 
-    movesCountSpan.innerText = movesCount;
+        movesCountSpan.innerText = movesCount;
 
-    modalMessage.innerText = "Congratulations! You got there in " + movesCount + " moves!";
+        document.getElementById("modal-win-message").innerText = "Congratulations! You got there in the end in " + movesCount + " moves!";
 
-    winModal.style.display = "block";
+        winModal.style.display = "block";
 
-    document.getElementById("close-win-button").addEventListener("click", function () {
-        winModal.style.display = "none";
-    });
+        document.getElementById("close-win-button").addEventListener("click", function () {
+            winModal.style.display = "none";
+        });
+    }
 }
 
 document.getElementById("close-button").addEventListener("click", closeModal);
 
-// Add event listener for the close button outside the showModal function
 document.getElementById("close-win-button").addEventListener("click", function () {
     var winModal = document.getElementById("modal-win");
     winModal.style.display = "none";
