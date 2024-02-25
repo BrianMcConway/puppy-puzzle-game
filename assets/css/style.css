@@ -13,10 +13,23 @@ body {
 }
 
 .stats {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
+    text-align: center;
+}
+
+.turns {
+    display: inline-block;
+    width: 100px; 
+    border: 5px solid;
+    border-radius: 10%;
+    padding: 10px;
+    margin: 0 auto 10px;
+    background-color: #ffffff;
+}
+
+.turns span {
+    display: inline-block;
+    width: 20px; 
+    text-align: center;
 }
 
 .puzzle-board {
@@ -176,6 +189,25 @@ footer {
     border-radius: 10px;
     padding: 10px;
     background-color: #ffffff;
+}
+
+.modal-win {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 10px solid #000000;
+    border-radius: 10px;
+    z-index: 1000;
+    width: 300px;
+    max-width: 80%;
+}
+
+.modal-win-body {
+    background: linear-gradient(to bottom, #e7eb09, #da3a8a);
+    padding: 10%;
+    color: #000000;
+    font-weight: bold;
 }
 
 @media only screen and (max-width: 768px) {
