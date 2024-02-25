@@ -49,6 +49,7 @@ img {
 
 .new-game {
     font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
     cursor: pointer;
     margin-right: 40%;
     border: 3px solid #000000;
@@ -58,6 +59,7 @@ img {
 
 .how-to-play {
     color: #000000;
+    font-weight: bold;
     cursor: pointer;
     margin-left: 40%;
     border: 3px solid #000000;
@@ -119,9 +121,9 @@ footer {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 80%;
+    width: 50%;
     max-width: 600px;
-    height background-color: #3498e9;
+    background-color: #ffffff;
     border: 10px solid #000000;
     border-radius: 10px;
 }
@@ -129,10 +131,11 @@ footer {
 .modal-rules-body {
     background: linear-gradient(to bottom, #e7eb09, #da3a8a);
     padding: 10%;
+    color: #000000;
+    font-weight: bold;
 }
 
 .close-button {
-    color: #000000;
     font-size: 20px;
     font-weight: bold;
     cursor: pointer;
@@ -142,7 +145,37 @@ footer {
     background-color: #ffffff;
 }
 
+.modal-sure {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    border: 10px solid #000000;
+    border-radius: 10px;
+    width: 300px;
+    max-width: 80%;
 
+}
+
+.modal-sure-body {
+    background: linear-gradient(to bottom, #e7eb09, #da3a8a);
+    padding: 10%;
+    color: #000000;
+    font-weight: bold;
+}
+
+.confirm-yes,
+.confirm-no {
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    border: 3px solid #000000;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #ffffff;
+}
 
 @media only screen and (max-width: 768px) {
     .heading {
@@ -157,5 +190,12 @@ footer {
     .how-to-play {
         margin: 10px;
         width: calc(50% - 20px);
+    }
+
+    /* Responsive styles for modal on smaller screens */
+    .modal-rules {
+        width: 80%;
+        max-width: none;
+        max-height: 80vh;
     }
 }

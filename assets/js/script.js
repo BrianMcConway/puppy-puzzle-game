@@ -8,21 +8,30 @@ var movesCount = 0; // Variable for counting moves
 // Event handler that executes function when HTML is loaded
 window.onload = function () {
     setupPuzzleBoard(); // Initial puzzle setup
-    document.getElementById("new-game").addEventListener("click", startNewGame);
+    document.getElementById("new-game").addEventListener("click", confirmStartNewGame);
     document.getElementById("how-to-play").addEventListener("click", openModal);
 }
 
 // Function to start a new game
-function startNewGame() {
-    // Display a confirmation dialog for starting a new game (Add a pop-up window)
-    var confirmNewGame = confirm("Are you sure you want to start a new game?");
+function confirmStartNewGame() {
+    var confirmationModal = document.getElementById("modal-sure");
+    confirmationModal.style.display = "block";
 
-    if (confirmNewGame) {
-        movesCount = 0; // Reset moves count
-        updateTurnsCount(); // Update turns count display
-        shuffleImages(); // Shuffle the images randomly
-        setupPuzzleBoard(); // Reset puzzle board
-    }
+    document.getElementById("confirm-yes").addEventListener("click", function () {
+        confirmationModal.style.display = "none";
+        startNewGame();
+    });
+
+    document.getElementById("confirm-no").addEventListener("click", function () {
+        confirmationModal.style.display = "none";
+    });
+}
+
+function startNewGame() {
+    movesCount = 0; // Reset moves count
+    updateTurnsCount(); // Update turns count display
+    shuffleImages(); // Shuffle the images randomly
+    setupPuzzleBoard(); // Reset puzzle board
 }
 
 // Function to shuffle the images randomly
