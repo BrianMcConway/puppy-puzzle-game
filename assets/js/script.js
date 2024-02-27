@@ -46,6 +46,12 @@ function shuffleImages() {
     }
 }
 
+function createClickHandler(row, col) {
+    return function() {
+        moveTile(row, col);
+    };
+}
+
 function setupPuzzleBoard() {
     document.getElementById("puzzle-board").innerHTML = "";
 
@@ -55,9 +61,8 @@ function setupPuzzleBoard() {
             tile.id = r.toString() + "-" + c.toString();
             tile.src = imgOrder[r * columns + c];
             tile.classList.add("puzzle-tile");
-            tile.addEventListener("click", function () {
-                moveTile(r, c);
-            });
+            
+            tile.addEventListener("click", createClickHandler(r, c));
 
             document.getElementById("puzzle-board").append(tile);
 

@@ -128,7 +128,7 @@ footer {
 .social-icons {
     display: flex;
     justify-content: space-around;
-    font-size: 150%;
+    font-size: 200%;
 }
 
 /*Social media links icons color & hover transition time*/
