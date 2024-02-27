@@ -61,7 +61,7 @@ img {
     flex-direction: row;
     justify-content: space-evenly;
     padding-top: 10px;
-
+    margin-bottom: 20px;
 }
 
 .new-game {
@@ -103,6 +103,7 @@ img {
     border-radius: 10px;
     display: block;
     margin: auto;
+    margin-bottom: 20px;
     padding: 10px;
     cursor: pointer;
     -webkit-tap-highlight-color: transparent;
@@ -256,12 +257,5 @@ footer {
         width: 80%;
         max-width: none;
         max-height: 80vh;
-    }
-}
-
-/* Additional media query for 320x480 pixels */
-@media only screen and (max-width: 320px) and (max-height: 480px) {
-    .heading {
-        font-size: 40px;
     }
 }
