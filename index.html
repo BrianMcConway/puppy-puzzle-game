@@ -37,9 +37,12 @@
 
 
 
-    <audio class="audio-button" controls muted loop src="assets\audio\itty-bitty-8-bit.mp3">This browser
-        does not support
-        audio</audio>
+    <audio id="audio-player" class="audio-controller" controls loop>
+        <source src="assets/audio/itty-bitty-8-bit.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+    <img id="audio-icon" class="audio-button" src="assets/images/vol-on.png" alt="Audio Icon">
 
     <footer>
         <div class="social-icons" id="icons">

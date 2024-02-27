@@ -145,3 +145,20 @@ document.getElementById("close-win-button").addEventListener("click", function (
     let winModal = document.getElementById("modal-win");
     winModal.style.display = "none";
 });
+
+let audio = document.getElementById("audio-player");
+let audioIcon = document.getElementById("audio-icon");
+
+audioIcon.addEventListener("click", function() {
+    toggleAudio();
+});
+
+function toggleAudio() {
+    if (audio.paused) {
+        audio.play();
+        audioIcon.src = "assets/images/vol-on.png";
+    } else {
+        audio.pause();
+        audioIcon.src = "assets/images/vol-off.png";
+    }
+}

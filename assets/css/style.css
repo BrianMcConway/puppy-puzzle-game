@@ -10,6 +10,7 @@ body {
     text-align: center;
     font-size: 125px;
     margin: 0;
+    padding-top: 0;
 }
 
 .stats {
@@ -90,13 +91,21 @@ img {
     color: #000000;
 }
 
+.audio-controller {
+    display: none;
+}
+
 .audio-button {
-    width: 50%;
-    max-width: 250px;
+    width: 20%;
+    max-width: 50px;
+    border: none;
     display: block;
     margin: auto;
     padding-top: 10px;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
 }
+
 
 footer {
     font-family: sans-serif;
