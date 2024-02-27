@@ -1,10 +1,11 @@
-var rows = 3;
-var columns = 3;
-var emptyTile = { row: 2, col: 2 };
-var imgOrder = ["assets/images/2.png", "assets/images/5.png", "assets/images/3.png", "assets/images/7.png", "assets/images/6.png", "assets/images/8.png", "assets/images/9.png", "assets/images/1.png", "assets/images/4.png"];
+let rows = 3;
+let columns = 3;
+let emptyTile = { row: 2, col: 2 };
+let imgOrder = ["assets/images/2.png", "assets/images/5.png", "assets/images/3.png", "assets/images/7.png",
+    "assets/images/6.png", "assets/images/8.png", "assets/images/9.png", "assets/images/1.png", "assets/images/4.png"];
 
-var movesCount = 0;
-var puzzleSolved = false; // Flag to track puzzle state
+let movesCount = 0;
+let puzzleSolved = false; // Flag to track puzzle state
 
 // Event handler that executes function when HTML is loaded
 window.onload = function () {
@@ -17,7 +18,7 @@ window.onload = function () {
 }
 
 function confirmStartNewGame() {
-    var confirmationModal = document.getElementById("modal-sure");
+    let confirmationModal = document.getElementById("modal-sure");
     confirmationModal.style.display = "block";
 
     document.getElementById("confirm-yes").addEventListener("click", function () {
@@ -90,7 +91,7 @@ function isAdjacent(row1, col1, row2, col2) {
 }
 
 function swapTiles(row1, col1, row2, col2) {
-    var tempSrc = imgOrder[row1 * columns + col1];
+    let tempSrc = imgOrder[row1 * columns + col1];
     imgOrder[row1 * columns + col1] = imgOrder[row2 * columns + col2];
     imgOrder[row2 * columns + col2] = tempSrc;
 
@@ -111,20 +112,20 @@ function isPuzzleSolved() {
 }
 
 function openModal() {
-    var modal = document.getElementById("modal-rules");
+    let modal = document.getElementById("modal-rules");
     modal.style.display = "block";
 }
 
 function closeModal() {
-    var modal = document.getElementById("modal-rules");
+    let modal = document.getElementById("modal-rules");
     modal.style.display = "none";
 }
 
 function showWinModal() {
 
     if (puzzleSolved) {
-        var winModal = document.getElementById("modal-win");
-        var movesCountSpan = document.getElementById("win-movesCount");
+        let winModal = document.getElementById("modal-win");
+        let movesCountSpan = document.getElementById("win-movesCount");
 
         movesCountSpan.innerText = movesCount;
 
@@ -141,6 +142,6 @@ function showWinModal() {
 document.getElementById("close-button").addEventListener("click", closeModal);
 
 document.getElementById("close-win-button").addEventListener("click", function () {
-    var winModal = document.getElementById("modal-win");
+    let winModal = document.getElementById("modal-win");
     winModal.style.display = "none";
 });

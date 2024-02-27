@@ -34,11 +34,11 @@ body {
 }
 
 .puzzle-board {
-    width: 90%;
+    width: 95%;
     max-width: 450px;
     aspect-ratio: 1;
     background-color: #ffffff;
-    border: 10px solid #ffffff;
+    border: 5px solid #ffffff;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
