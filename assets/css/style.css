@@ -258,3 +258,10 @@ footer {
         max-height: 80vh;
     }
 }
+
+/* Additional media query for 320x480 pixels */
+@media only screen and (max-width: 320px) and (max-height: 480px) {
+    .heading {
+        font-size: 40px;
+    }
+}
