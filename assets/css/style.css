@@ -242,6 +242,11 @@ footer {
         font-size: 50px;
     }
 
+    body {
+        max-height: 100%;
+        overflow: hidden;
+    }
+
     .how-new {
         flex-wrap: wrap;
     }
