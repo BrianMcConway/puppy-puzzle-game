@@ -1,5 +1,7 @@
 # Puppy Puzzle
 
+<https://brianmcconway.github.io/puppy-puzzle-game/>
+
 <img src="readme-docs/responsiveness.png" alt="Image if responsiveness on different screens" width="50%" height="auto">
 
 ## Intro
