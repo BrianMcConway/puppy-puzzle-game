@@ -15,7 +15,7 @@ window.onload = function () {
     setupPuzzleBoard(); /** Initialize the puzzle board */
     document.getElementById("new-game").addEventListener("click", confirmStartNewGame);
     document.getElementById("how-to-play").addEventListener("click", openModal);
-}
+};
 
 function confirmStartNewGame() { /** Confirm 'New Game' modal */
     let confirmationModal = document.getElementById("modal-sure");
