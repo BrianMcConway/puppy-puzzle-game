@@ -9,44 +9,35 @@ The object of the game is to rearrange the puzzle pieces to reveal the original 
 
 ## User Stories
 
-- As a first-time user I was able to quickly identify that this was a picture puzzle. I was unsure of the rules before I started the game so I used the "how to play" option which clearly outlined the rules of the game. The game played smoothly and I when I eventually solved the puzzle, a pop-up messsage congratulated me and let me know how many moves it took to complete the game.
+- As a first-time user I was able to quickly identify that this was a picture puzzle. I was unsure of the rules before I started the game so I used the "how to play" option which clearly outlined the rules of the game. The game played smoothly, and when I eventually solved the puzzle, a pop-up messsage congratulated me and let me know how many moves it took to complete the game.
 
 ## Features
 
-### Navigation Bar
+### Game Options
 
-- Featured on all three pages, the full responsive navigation bar (navbar) includes links to the 'Home', 'About' and 'Contact' pages and is identical in each page to allow for easy navigation.
-- This section will allow the user to easily navigate from page to page across all devices without having to revert back to the previous page via the ‘back’ button.
-- The current page is highlighted in a brighter font color on the navbar to let the user know which page they are on at that time.
-- The navbar page names will also change color when the mouse pointer is hovered over them to indicate that they are functional.
+- The game options include a 'How to Play', 'New Game', and audio on/off buttons". The 'How to Play' button opens a pop-up window with instructions on how to play the game
 
-  <img src="readme-docs/navbar-image-readme.png" alt="image of website navbar" width="55%" height="auto">
+  <img src="readme-docs/game-options.png" alt="Image of 'How to Play', 'New Game', and audio on/off buttons" width="55%" height="auto">
 
-### The landing page image
+**How to Play**
+- This button opens a pop-up window that contains the rules of the game. There is a 'Close' button at the bottom of the window to exit back to the game.
 
-- The landing page image is the ABP logo which shows a galaxy inside of a beard template with the company name imposed over it. There is intro text describing the purpose of the site and a link to the About page in the text. This link is highlighted in a brighter color font and changes color when the mouse pointer hovers over it. This sits over a background image of a sunrise over the planet Earth.
+    <img src="readme-docs/how-to-play-img.png" alt="Image of 'How to Play' button" width="55%" height="auto">
+    <img src="readme-docs/how-to-play.png" alt="Image of 'How to Play' instructions" width="55%" height="auto">
 
-    <img src="readme-docs/landing-page.png" alt="image of beard with galaxy inside, sunrise over earth from space & intro text" width="35%" height="auto">
+**New Game**
+- This buttton starts a new game at any time. You will be asked to confirm the request via a pop-up window where you can confirm or cancel the request.
 
-- The landing page gives a brief introduction to the function of the website, which is to provide media production options for people looking to create content for YouTube channels, social media, podcasts and websites.
+    <img src="readme-docs/new-game-img.png" alt="Image of 'New Game' button" width="55%" height="auto">
+    <img src="readme-docs/new-game-confirm.png" alt="Image of 'New Game' confirmation button" width="55%" height="auto">
 
-- **About**
+**Audio on/off**
 
-- The About page will provide the user with supporting YouTube videos and SoundCloud playlist to showcase previously completed projects.
-- This section is valuable to the user as they will be able to easily identify if this service is useful to them.
 
-   <img src="readme-docs/about-page.png" alt="Image of About page with YouTube video and descriptive text." width="35%" height="auto">
+<img src="readme-docs/audio-off.png" alt="Image of 'Audio muted' button" width="55%" height="auto">
+<img src="readme-docs/audio-on.png" alt="Image of 'Audio unmuted' button" width="55%" height="auto">
 
-- **Contact**
-
-- This page will allow the user to submit a through a contact form. The user will be required to submit their full name, an email address, and query. They will then be directed to a confirmation page with a link to return to the contact page.
-
-   <img src="readme-docs/contact-page.png" alt="Image of Contact page with contact form." width="35%" height="auto">
-
-- **Confirmation Page**
-- The Confirmation page will show a message that the user has successfully completed the contact form. There is also a link back to the Contact page which changes color when hovered over with the mouse pointer.
-
-   <img src="readme-docs/confirmation-page-readme-image.png" alt="image of Confirmation page message." width="35%" height="auto">
+### Turns Counter
 
 ### The Footer
 
@@ -61,7 +52,7 @@ The object of the game is to rearrange the puzzle pieces to reveal the original 
 
 ## Typography and color scheme
 
-- The Kanit font from Google Fonts will be used for this project.
+- The Honk font from Google Fonts will be used for this project.
 - The color schemes will include Greys #8C8C8C #404040 #262626 #BFBFBF #595959 #d9d9d9 from Adobe Color and black #000000/white /grey contrasts between background and text to give a sleek look over a colored background. I also used #9087b0 for color change on usable links and icons when hovered over with the mouse pointer.
 
     <img src="readme-docs/adobe-color-black-grey-anthracite.jpeg" alt="Adobe color pallet image." width="25%" height="auto">
@@ -79,7 +70,7 @@ The object of the game is to rearrange the puzzle pieces to reveal the original 
 
 ### Programs, Libraries & Frameworks Used
 
-- Google Fonts was used to import the Kanit font used throughout the entire project text.
+- Google Fonts was used to import the Honk font used for the heading text.
 - Font Awesome was used for all social media icons contained in the project.
 - VS Code Desktop was used to write the code.
 - Inkscape was used to create the individual puzzle pieces.
