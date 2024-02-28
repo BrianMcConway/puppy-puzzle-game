@@ -163,7 +163,8 @@ footer {
 .modal-rules-body {
     background: linear-gradient(to bottom, #e7eb09, #da3a8a);
     padding: 20px;
-    font-size: 15px;
+    font-size: 14px;
+    text-align: center;
     color: #000000;
     font-weight: bold;
     box-sizing: border-box;
