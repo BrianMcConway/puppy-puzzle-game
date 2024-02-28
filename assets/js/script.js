@@ -1,8 +1,8 @@
 let rows = 3;
 let columns = 3;
 let emptyTile = { row: 2, col: 2 };
-let imgOrder = ["assets/images/2.png", "assets/images/5.png", "assets/images/3.png", "assets/images/7.png",
-    "assets/images/6.png", "assets/images/8.png", "assets/images/9.png", "assets/images/1.png", "assets/images/4.png"];
+let imgOrder = ["assets/images/top-mid.png", "assets/images/mid-mid.png", "assets/images/top-right.png", "assets/images/bot-left.png",
+    "assets/images/mid-right.png", "assets/images/bot-mid.png", "assets/images/bot-right.png", "assets/images/top-left.png", "assets/images/mid-left.png"];
 
 let movesCount = 0;
 let puzzleSolved = false; // Flag to track puzzle state
@@ -66,7 +66,7 @@ function setupPuzzleBoard() {
 
             document.getElementById("puzzle-board").append(tile);
 
-            if (tile.src.includes("assets/images/3.png")) {
+            if (tile.src.includes("assets/images/top-right.png")) {
                 emptyTile = { row: r, col: c };
             }
         }
