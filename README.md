@@ -1,6 +1,6 @@
 # Puppy Puzzle
 
-<img src="readme-docs/responsive-screenshot.png" alt="image" width="50%" height="auto">
+<img src="readme-docs/responsiveness.png" alt="image" width="50%" height="auto">
 
 ## Intro
 
@@ -17,25 +17,25 @@ The object of the game is to rearrange the puzzle pieces to reveal the original 
 
 - The game options include a 'How to Play', 'New Game', and audio on/off buttons". The 'How to Play' button opens a pop-up window with instructions on how to play the game
 
-  <img src="readme-docs/game-options.png" alt="Image of 'How to Play', 'New Game', and audio on/off buttons" width="55%" height="auto">
+  <img src="readme-docs/game-options.png" alt="Image of 'How to Play', 'New Game', and audio on/off buttons" width="30%" height="auto">
 
 **How to Play**
 - This button opens a pop-up window that contains the rules of the game. There is a 'Close' button at the bottom of the window to exit back to the game.
 
-    <img src="readme-docs/how-to-play-img.png" alt="Image of 'How to Play' button" width="55%" height="auto">
-    <img src="readme-docs/how-to-play.png" alt="Image of 'How to Play' instructions" width="55%" height="auto">
+    <img src="readme-docs/how-to-play-img.png" alt="Image of 'How to Play' button" width="30%" height="auto">
+    <img src="readme-docs/how-to-play.png" alt="Image of 'How to Play' instructions" width="30%" height="auto">
 
 **New Game**
 - This buttton starts a new game at any time. You will be asked to confirm the request via a pop-up window where you can confirm or cancel the request.
 
-    <img src="readme-docs/new-game-img.png" alt="Image of 'New Game' button" width="55%" height="auto">
-    <img src="readme-docs/new-game-confirm.png" alt="Image of 'New Game' confirmation button" width="55%" height="auto">
+    <img src="readme-docs/new-game-img.png" alt="Image of 'New Game' button" width="30%" height="auto">
+    <img src="readme-docs/new-game-confirm.png" alt="Image of 'New Game' confirmation button" width="30%" height="auto">
 
 **Audio on/off**
 
 
-<img src="readme-docs/audio-off.png" alt="Image of 'Audio muted' button" width="55%" height="auto">
-<img src="readme-docs/audio-on.png" alt="Image of 'Audio unmuted' button" width="55%" height="auto">
+<img src="readme-docs/audio-off.png" alt="Image of 'Audio muted' button" width="10%" height="auto">
+<img src="readme-docs/audio-on.png" alt="Image of 'Audio unmuted' button" width="9.8%" height="auto">
 
 ### Turns Counter
 
@@ -44,7 +44,7 @@ The object of the game is to rearrange the puzzle pieces to reveal the original 
 - The footer section includes links to the relevant social media sites for ABP. The links will open to a new tab to allow easy navigation for the user.
 - The footer is valuable to the user as it encourages them to keep connected via social media
 
-    <img src="readme-docs/footer-readme-screenshot.png" alt="image of website footer" width="65%" height="auto">
+    <img src="readme-docs/footer.png" alt="image of website footer" width="65%" height="auto">
 
 ## Future Features
 
@@ -52,15 +52,15 @@ The object of the game is to rearrange the puzzle pieces to reveal the original 
 
 ## Typography and color scheme
 
-- The Honk font from Google Fonts will be used for this project.
-- The color schemes will include Greys #8C8C8C #404040 #262626 #BFBFBF #595959 #d9d9d9 from Adobe Color and black #000000/white /grey contrasts between background and text to give a sleek look over a colored background. I also used #9087b0 for color change on usable links and icons when hovered over with the mouse pointer.
+- The Honk font from Google Fonts will be used for this project Heading.
+- A custom color pallet will be used for this project
 
-    <img src="readme-docs/adobe-color-black-grey-anthracite.jpeg" alt="Adobe color pallet image." width="25%" height="auto">
-    <img src="readme-docs/adobe-color-grey-gradient-abstract.jpeg" alt="Adobe color pallet image." width="25%" height="auto">
+    
+    <img src="readme-docs/custom-colors.png" alt="Adobe color pallet image." width="50%" height="auto">
 
 ## Wireframes
 
-   <img src="readme-docs/wireframe-abp-website.png" alt="Wireframe image of website plan." width="60%" height="auto">
+   <img src="readme-docs\wireframe.png" alt="Wireframe image of website plan." width="40%" height="auto">
 
 ## Technology Used
 
@@ -80,11 +80,11 @@ The object of the game is to rearrange the puzzle pieces to reveal the original 
 
 ## Testing
 
-- W3C Markup Validator and W3C CSS Validator were used to validate all three pages of the project. The final tests were completed without errors or warnings.
-- Lighthouse developer tool was also used to gauge the performance of the project on desktop and mobile views. The desktop scored a 95, and the mobile test scored 83 for performance.
+- W3C Markup Validator, W3C CSS Validator & JS Hint were used to validate all code contained in the project. The final tests were completed without errors. 
+- Lighthouse developer tool was also used to gauge the performance of the project on desktop and mobile views. The desktop scored a 99, and the mobile test scored 72 for performance.
 
-    <img src="readme-docs/95-desktop-home-performance.png" alt="Performance score image desktop." width="26.7%" height="auto">
-    <img src="readme-docs/mobile-83.png" alt="Performance score image mobile." width="25%" height="auto">
+    <img src="readme-docs/performance-desktop.png" alt="Performance score image desktop." width="27%" height="auto">
+    <img src="readme-docs/performance-mobile.png" alt="Performance score image mobile." width="25%" height="auto">
 
 ### Further Testing
 
@@ -106,7 +106,7 @@ The object of the game is to rearrange the puzzle pieces to reveal the original 
 - From the source section drop-down menu, select the Master Branch
 - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
 
-The live link can be followed here - <https://brianmcconway.github.io/Astral-Beard-Productions/index.html>
+The live link can be followed here - <https://brianmcconway.github.io/puppy-puzzle-game/>
 
 ## Credits
 

@@ -3,6 +3,7 @@
 body {
     background-color: #3498e9;
     background-position: center;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .heading {
@@ -19,7 +20,7 @@ body {
 
 .turns {
     display: inline-block;
-    width: 140px; 
+    width: 140px;
     border: 5px solid;
     border-radius: 10%;
     padding: 10px;
@@ -30,14 +31,13 @@ body {
 
 .turns span {
     display: inline-block;
-    width: 40px; 
+    width: 40px;
     text-align: center;
 }
 
 .puzzle-board {
     width: 95%;
     max-width: 450px;
-    aspect-ratio: 1;
     background-color: #ffffff;
     border: 5px solid #ffffff;
     margin: 0 auto;
@@ -45,7 +45,7 @@ body {
     grid-template-columns: repeat(3, 1fr);
     gap: 1px;
     cursor: pointer;
-    -webkit-tap-highlight-color: transparent;
+    
 }
 
 img {
@@ -106,7 +106,7 @@ img {
     margin-bottom: 40px;
     padding: 10px;
     cursor: pointer;
-    -webkit-tap-highlight-color: transparent;
+    
     background-color: #ffffff;
 }
 
@@ -167,7 +167,7 @@ footer {
     color: #000000;
     font-weight: bold;
     box-sizing: border-box;
-    
+
 }
 
 
@@ -254,6 +254,6 @@ footer {
 
     /* Responsive styles for modal on smaller screens */
     .modal-rules {
-        width: 80%; 
+        width: 80%;
     }
 }
