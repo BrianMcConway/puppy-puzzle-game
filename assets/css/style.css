@@ -3,6 +3,7 @@
 body {
     background-color: #3498e9;
     background-position: center;
+    min-height: 100%;
 }
 
 .heading {
@@ -161,13 +162,13 @@ footer {
 
 .modal-rules-body {
     background: linear-gradient(to bottom, #e7eb09, #da3a8a);
-    padding: 10%;
+    padding: 20px;
     font-size: 15px;
     color: #000000;
     font-weight: bold;
+    box-sizing: border-box;
     
 }
-
 
 
 .close-button {
@@ -253,8 +254,6 @@ footer {
 
     /* Responsive styles for modal on smaller screens */
     .modal-rules {
-        width: 80%;
-        max-width: none;
-        max-height: 80%;
+        width: 80%; 
     }
 }

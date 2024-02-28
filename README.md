@@ -4,15 +4,12 @@
 
 ## Intro
 
-- The purpose of this project is to create a fully functional website that will introduce and showcase a business called Astral Beard Productions (I will use the abbreviation "ABP" from here on in), and allow potential new customers to contact for more information.
-- ABP is a production company that provides capture and/or editing of video footage with the addition of a soundtrack composed by ABP themselves. ABP also provides Intro clips and audio for projects like YouTube channels for sports people and for podcasts.
+- The purpose of this project is to create a fully functional front-end site that responds to users' interactions. In this case I have created a slide puzzle game. 
+The object of the game is to rearrange the puzzle pieces to reveal the original image. The puzzle pieces can only swap with the 'blank' grey puzzle piece to move horizontally or vertically around the puzzle board. The game concludes when all the puzzle pieces are in the correct order and you are notified of how many moves it took you to complete the puzzle. There are interactive buttons which show how to play the game, to start a new game, and also to toggle on and off the background music. The default for audio is set to mute. 
 
 ## User Stories
 
-- As a user I was able to quickly identify the purpose of the website and see if it was relevant to needs. The Home page provided me with an introduction to the purpose of the website.
-- I was able to navigate the site easily with clearly visible links to move through the website pages. The site has links to other pages within the paragraph text that enabled me to move through the site in a fluid manner.
-- Each example project was accompanied with a description of the project and an external link to it's incorporation into a larger project and the people behind the projects.
-- I was able to easily find and follow the social media links to see more about the business. This gave me more confidence in the business from seeing a following on social media.
+- As a first-time user I was able to quickly identify that this was a picture puzzle. I was unsure of the rules before I started the game so I used the "how to play" option which clearly outlined the rules of the game. The game played smoothly and I when I eventually solved the puzzle, a pop-up messsage congratulated me and let me know how many moves it took to complete the game.
 
 ## Features
 
@@ -60,7 +57,7 @@
 
 ## Future Features
 
-- Future features will include an additional page where original music compositions can be purchased through the website with a copyright.
+- Future features will include recording of high scores, an audio alert when you complete the game (if audio is enabled), 
 
 ## Typography and color scheme
 
@@ -78,18 +75,16 @@
 
 ### Language Used
 
-- HTML5 and CSS3 were the languages used in this website.
+- HTML5, CSS3 & JavaScript were the languages used in this project.
 
 ### Programs, Libraries & Frameworks Used
 
 - Google Fonts was used to import the Kanit font used throughout the entire project text.
 - Font Awesome was used for all social media icons contained in the project.
-- Codeanywhere and VS Code Desktop were used to write the code.
-- Inkscape was used for the logo design.
+- VS Code Desktop was used to write the code.
+- Inkscape was used to create the individual puzzle pieces.
 - Favicon.cc was used to generate the favicon.
-- Cloudconvert was used to convert my .png to .webp files to increase performance.
 - Figma was used to design the wireframe for the project.
-- Git was used to commit and push to Github.
 - Github was used to store the project code after being pushed.
 
 ## Testing
