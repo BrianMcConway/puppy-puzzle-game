@@ -165,11 +165,10 @@ footer {
     font-size: 15px;
     color: #000000;
     font-weight: bold;
+    
 }
 
-.modal-rules-body p {
-    margin-bottom: 20px;
-}
+
 
 .close-button {
     font-size: 20px;
@@ -239,12 +238,7 @@ footer {
 
 @media only screen and (max-width: 768px) {
     .heading {
-        font-size: 50px;
-    }
-
-    body {
-        max-height: 100%;
-        overflow: hidden;
+        font-size: 45px;
     }
 
     .how-new {
@@ -261,6 +255,6 @@ footer {
     .modal-rules {
         width: 80%;
         max-width: none;
-        max-height: 80vh;
+        max-height: 80%;
     }
 }
