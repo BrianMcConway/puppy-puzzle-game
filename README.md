@@ -1,6 +1,6 @@
 # Puppy Puzzle
 
-<img src="readme-docs/responsiveness.png" alt="image" width="50%" height="auto">
+<img src="readme-docs/responsiveness.png" alt="Image if responsiveness on different screens" width="50%" height="auto">
 
 ## Intro
 
@@ -17,19 +17,19 @@ The object of the game is to rearrange the puzzle pieces to reveal the original 
 
 - The game options include a 'How to Play', 'New Game', and audio on/off buttons". The 'How to Play' button opens a pop-up window with instructions on how to play the game
 
-  <img src="readme-docs/game-options.png" alt="Image of 'How to Play', 'New Game', and audio on/off buttons" width="30%" height="auto">
+  <img src="readme-docs/game-options.png" alt="Image of 'How to Play', 'New Game', and audio on/off buttons" width="20%" height="auto">
 
 **How to Play**
 - This button opens a pop-up window that contains the rules of the game. There is a 'Close' button at the bottom of the window to exit back to the game.
 
-    <img src="readme-docs/how-to-play-img.png" alt="Image of 'How to Play' button" width="30%" height="auto">
-    <img src="readme-docs/how-to-play.png" alt="Image of 'How to Play' instructions" width="30%" height="auto">
+    <img src="readme-docs/how-to-play-img.png" alt="Image of 'How to Play' button" width="20%" height="auto">
+    <img src="readme-docs/how-to-play.png" alt="Image of 'How to Play' instructions" width="16.5%" height="auto">
 
 **New Game**
 - This buttton starts a new game at any time. You will be asked to confirm the request via a pop-up window where you can confirm or cancel the request.
 
-    <img src="readme-docs/new-game-img.png" alt="Image of 'New Game' button" width="30%" height="auto">
-    <img src="readme-docs/new-game-confirm.png" alt="Image of 'New Game' confirmation button" width="30%" height="auto">
+    <img src="readme-docs/new-game-img.png" alt="Image of 'New Game' button" width="15%" height="auto">
+    <img src="readme-docs/new-game-confirm.png" alt="Image of 'New Game' confirmation button" width="14%" height="auto">
 
 **Audio on/off**
 
@@ -37,12 +37,22 @@ The object of the game is to rearrange the puzzle pieces to reveal the original 
 <img src="readme-docs/audio-off.png" alt="Image of 'Audio muted' button" width="10%" height="auto">
 <img src="readme-docs/audio-on.png" alt="Image of 'Audio unmuted' button" width="9.8%" height="auto">
 
-### Turns Counter
+**Turns Counter**
+
+- The Turns counter will increase by one every time a move is made in the puzzle. This will be displayed in the pop-up window when the puzzle is solved.
+
+<img src="readme-docs\turns-counter.png" alt="image of turns counter" width="30%" height="auto">
+
+**End of Game Message**
+
+- When the puzzle is solved, a pop-up message will congratulate you for solving the puzzle and let you know how many moves you made.
+
+<img src="readme-docs/win-message.png" alt="image of end of game message" width="20%" height="auto">
 
 ### The Footer
 
 - The footer section includes links to the relevant social media sites for ABP. The links will open to a new tab to allow easy navigation for the user.
-- The footer is valuable to the user as it encourages them to keep connected via social media
+- The footer is valuable to the user as it encourages them to keep connected via social media.
 
     <img src="readme-docs/footer.png" alt="image of website footer" width="65%" height="auto">
 
@@ -50,13 +60,13 @@ The object of the game is to rearrange the puzzle pieces to reveal the original 
 
 - Future features will include recording of high scores, an audio alert when you complete the game (if audio is enabled), 
 
-## Typography and color scheme
+## Typography and Color Scheme
 
 - The Honk font from Google Fonts will be used for this project Heading.
-- A custom color pallet will be used for this project
+- A custom color palette from Adobe Color will be used for this project. This color pallet consists of #3498E9 for the background, #E7EB09 for the yellow which transitions to red #DA3A8A in the heading and footer
 
     
-    <img src="readme-docs/custom-colors.png" alt="Adobe color pallet image." width="50%" height="auto">
+    <img src="readme-docs/adobe-project-palette.png" alt="Adobe color pallet image." width="50%" height="auto">
 
 ## Wireframes
 
@@ -66,7 +76,7 @@ The object of the game is to rearrange the puzzle pieces to reveal the original 
 
 ### Language Used
 
-- HTML5, CSS3 & JavaScript were the languages used in this project.
+- HTML5, CSS3 & JavaScript were the languages I used in this project.
 
 ### Programs, Libraries & Frameworks Used
 
@@ -94,10 +104,8 @@ The object of the game is to rearrange the puzzle pieces to reveal the original 
 
 ### Known Bugs
 
-- When scrolling on mobile devices, the background image slightly moves up and down in the scrolling direction. This is happening even though the background image is fixed. The bug persisted with the addition of a @media query to address the issue which has been removed. This bug persists.
-- There was an issue with the responsiveness of the About page. I wanted to have the media clip and relevant text on the same row on wider screens, and for the text to move below the media as the screen got narrower. I achieved this by removing the excess html and css that was causing conflicts. This bug on the About page has been resolved.
-- I had some issues with the background image not visible after I pushed to Github. The solution to this bug was in the Love Running coursework and I was able to resolve the issue for the final view of the project.
-- During the course of the project there were issues with Codeanywhere not loading up my repositary on a few occasions, and also issues with commits not being recognised. I copied my progress to VS Code desktop version and worked from there to have a workspace that I knew would load for me every time, and also see my changes in realtime. I had started to move to Gitpod but encountered conflict issues as can be seen from my git commits. I continued to use Codeanywhere to complete the project.
+- When refreshing the page, the win-modal appears for a fraction of a second on the reload. 
+- On mobile view, the picture tiles were flasing when selected to move. I removed this by add -webkit-tap-highlight-color: transparent; to the body CSS. This has removed the flashing but shows up as a warning on the validator. 
 
 ## Deployment
 
@@ -110,15 +118,12 @@ The live link can be followed here - <https://brianmcconway.github.io/puppy-puzz
 
 ## Credits
 
-- How to change color on hover in css 2021 <https://www.youtube.com/watch?v=p2XzQq4vq70> A tutorial on hover css I used for my links changing color when hovered over.
-- Pixbay, for the royalty free background image.
-- Clipart Library Art, for the outline for the hero image.
-- Wallpaper Hub, for the hero image filling.
-- Karl McConway, for use of his video footage.
-- Geoff Cooper for use of his video footage.
-- Sheamus O'Neill, for the use of his club logo.
-- All music contained in the website is owned by myself the developer.
-- Love Running project, as a template for the comment box, and for the the favicon html.
+**During this project I used:**
+- https://rocoderes.com/slide-puzzle-game-in-html-css-and-javascript/  for puzzle-board sertup and movement of puzzle pieces.
+- https://codeguppy.com/code.html?t=sliding_puzzle
+ to help with the JavaScript for the movement of the puzzle pieces.
+- https://www.youtube.com/watch?v=o5ffh3KUaTM to help with the creation of modals.
+-  I also used Perplexity & ChatGPT which referenced MDN Web Docs including: Event Handling, Dom Manipulation, Arrays & Functions in JavaScript, 
 - This Readme file template, for the suggested layout.
 
 ## Acknowledgements

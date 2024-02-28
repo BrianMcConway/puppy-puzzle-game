@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Honk&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&family=Lato:wght@300&family=Oswald:wght@200;300;400;500;600;700&display=swap');
 
 body {
-    background-color: #3498e9;
+    background-color: #3498E9;
     background-position: center;
     -webkit-tap-highlight-color: transparent;
 }
@@ -26,7 +26,7 @@ body {
     padding: 10px;
     padding-right: 10px;
     margin: 0 auto 10px;
-    background-color: #ffffff;
+    background-color: #FFFFFF;
 }
 
 .turns span {
@@ -38,8 +38,8 @@ body {
 .puzzle-board {
     width: 95%;
     max-width: 450px;
-    background-color: #ffffff;
-    border: 5px solid #ffffff;
+    background-color: #FFFFFF;
+    border: 5px solid #FFFFFF;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -52,7 +52,7 @@ img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border: 1px solid #ffffff;
+    border: 1px solid #FFFFFF;
     box-sizing: border-box;
 }
 
@@ -107,7 +107,7 @@ img {
     padding: 10px;
     cursor: pointer;
     
-    background-color: #ffffff;
+    background-color: #FFFFFF;
 }
 
 
@@ -122,7 +122,7 @@ footer {
     right: 0;
     bottom: 0;
     width: 100%;
-    background: linear-gradient(to bottom, #e7eb09, #da3a8a);
+    background: linear-gradient(to bottom, #E7EB09, #DA3A8A);
 }
 
 /*Social media icons size & positioning on footer*/
@@ -140,7 +140,7 @@ footer {
 
 /*Social media links hover color change*/
 .fa-brands:hover {
-    color: #3498e9;
+    color: #3498E9;
 }
 
 
@@ -154,7 +154,7 @@ footer {
     transform: translate(-50%, -50%);
     width: 50%;
     max-width: 600px;
-    background-color: #ffffff;
+    background-color: #FFFFFF;
     border: 10px solid #000000;
     border-radius: 10px;
 }
@@ -179,7 +179,7 @@ footer {
     border-radius: 10px;
     padding: 10px;
     margin-top: 10px;
-    background-color: #ffffff;
+    background-color: #FFFFFF;
 }
 
 .modal-sure {
@@ -189,7 +189,7 @@ footer {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #ffffff;
+    background-color: #FFFFFF;
     border: 10px solid #000000;
     border-radius: 10px;
     width: 300px;
@@ -198,7 +198,7 @@ footer {
 }
 
 .modal-sure-body {
-    background: linear-gradient(to bottom, #e7eb09, #da3a8a);
+    background: linear-gradient(to bottom, #E7EB09, #DA3A8A);
     padding: 10%;
     color: #000000;
     font-weight: bold;
@@ -212,7 +212,7 @@ footer {
     border: 3px solid #000000;
     border-radius: 10px;
     padding: 10px;
-    background-color: #ffffff;
+    background-color: #FFFFFF;
 }
 
 .modal-win {
@@ -229,7 +229,7 @@ footer {
 }
 
 .modal-win-body {
-    background: linear-gradient(to bottom, #e7eb09, #da3a8a);
+    background: linear-gradient(to bottom, #E7EB09, #DA3A8A);
     padding: 10%;
     color: #000000;
     font-weight: bold;
