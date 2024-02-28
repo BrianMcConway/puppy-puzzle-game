@@ -47,7 +47,7 @@ The object of the game is to rearrange the puzzle pieces to reveal the original 
 
 - When the puzzle is solved, a pop-up message will congratulate you for solving the puzzle and let you know how many moves you made.
 
-<img src="readme-docs/win-message.png" alt="image of end of game message" width="20%" height="auto">
+<img src="readme-docs/win-screen.png" alt="image of end of game message" width="20%" height="auto">
 
 ### The Footer
 
