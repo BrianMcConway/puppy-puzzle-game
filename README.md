@@ -11,7 +11,12 @@ The object of the game is to rearrange the puzzle pieces to reveal the original 
 
 ## User Stories
 
-- As a first-time user I was able to quickly identify that this was a picture puzzle. I was unsure of the rules before I started the game so I used the "how to play" option which clearly outlined the rules of the game. The game played smoothly, and when I eventually solved the puzzle, a pop-up messsage congratulated me and let me know how many moves it took to complete the game.
+- As a user, I would like to be able to play the puzzle game.
+- As a user, I would like to be able to learn the rules before playing.
+- As a user, I would like to be able to keep track of the amount of turns I have taken.
+- As a user, I would like to see anotification when I have completed the puzzle.
+- As a user, I would like to be able to start a new game at any time.
+- As a user, I would like to confirm a new game start so I don't start again by mistake.
 
 ## Features
 
@@ -98,8 +103,7 @@ The object of the game is to rearrange the puzzle pieces to reveal the original 
     <img src="readme-docs/performance-desktop.png" alt="Performance score image desktop." width="27%" height="auto">
     <img src="readme-docs/performance-mobile.png" alt="Performance score image mobile." width="25%" height="auto">
 
-### Further Testing
-
+- All buttons and external links were tested manually to ensure there were no connection errors. The modals all open and close as expected, and external links open in a new page in the browser. 
 - The project was also tested with Google's dev tools to show responsiveness on different screen sizes, and also on different browsers.
 - Testing was done on several desktop and laptop computers, various mobile devices like the iPhone, Nokia, Samsung and Huawei to make sure that the navigation and external links were functioning correctly.
 - Family members, friends and colleagues also kindly tested the functionality and user experience at several stages of the projects development.
@@ -111,6 +115,7 @@ The object of the game is to rearrange the puzzle pieces to reveal the original 
 
 ## Deployment
 
+- The code was written on VS Code desktop version, commits were commented and pushed to the relevant Github repository.
 - The site was deployed to GitHub pages. The steps to deploy are as follows:
 - In the GitHub repository, navigate to the Settings tab
 - From the source section drop-down menu, select the Master Branch
