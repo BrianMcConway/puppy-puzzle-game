@@ -14,7 +14,7 @@ The object of the game is to rearrange the puzzle pieces to reveal the original 
 - As a user, I would like to be able to play the puzzle game.
 - As a user, I would like to be able to learn the rules before playing.
 - As a user, I would like to be able to keep track of the amount of turns I have taken.
-- As a user, I would like to see anotification when I have completed the puzzle.
+- As a user, I would like to see a notification when I have completed the puzzle.
 - As a user, I would like to be able to start a new game at any time.
 - As a user, I would like to confirm a new game start so I don't start again by mistake.
 
@@ -33,7 +33,7 @@ The object of the game is to rearrange the puzzle pieces to reveal the original 
     <img src="readme-docs/how-to-play.png" alt="Image of 'How to Play' instructions" width="16.5%" height="auto">
 
 **New Game**
-- This buttton starts a new game at any time. You will be asked to confirm the request via a pop-up window where you can confirm or cancel the request.
+- This button starts a new game at any time. You will be asked to confirm the request via a pop-up window where you can confirm or cancel the request.
 
     <img src="readme-docs/new-game-img.png" alt="Image of 'New Game' button" width="15%" height="auto">
     <img src="readme-docs/new-game-confirm.png" alt="Image of 'New Game' confirmation button" width="14%" height="auto">
@@ -58,7 +58,7 @@ The object of the game is to rearrange the puzzle pieces to reveal the original 
 
 ### The Footer
 
-- The footer section includes links to the relevant social media sites for ABP. The links will open to a new tab to allow easy navigation for the user.
+- The footer section includes links to the relevant social media sites for the puzzle. The links will open to a new tab to allow easy navigation for the user.
 - The footer is valuable to the user as it encourages them to keep connected via social media.
 
     <img src="readme-docs/footer.png" alt="image of website footer" width="65%" height="auto">
